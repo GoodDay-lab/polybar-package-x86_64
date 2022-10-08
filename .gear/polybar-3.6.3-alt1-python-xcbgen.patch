@@ -1,0 +1,20 @@
+--- polybar-3.6.3/lib/xpp/generators/cpp_client.py.orig	2022-09-29 18:24:08.685519932 +0300
++++ polybar-3.6.3/lib/xpp/generators/cpp_client.py	2022-09-29 18:25:55.538611200 +0300
+@@ -3093,8 +3093,15 @@ for (opt, arg) in opts:
+ 
+ # Import the module class
+ try:
+-    from xcbgen.state import Module
+-    from xcbgen.xtypes import *
++    lib64_39 = "/usr/lib64/python3.9"
++    lib64_27 = "/usr/lib64/python2.7"
++    if (lib64_39 in sys.path):
++        sys.path.remove(lib64_39)
++        sys.path.append(lib64_27)
++        from xcbgen.state import Module
++        from xcbgen.xtypes import *
++        sys.path.append(lib64_39)
++        sys.path.remove(lib64_27)
+ except ImportError:
+     print('''
+ Failed to load the xcbgen Python package!

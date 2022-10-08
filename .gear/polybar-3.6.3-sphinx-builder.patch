@@ -1,0 +1,8 @@
+--- polybar-3.6.3/doc/CMakeLists.txt.orig	2022-09-30 22:39:56.591154470 +0300
++++ polybar-3.6.3/doc/CMakeLists.txt	2022-09-30 22:40:02.972157878 +0300
+@@ -1,4 +1,4 @@
+-set(SPHINX_BUILD "sphinx-build" CACHE STRING "Name/Path of the sphinx-build executable to use.")
++set(SPHINX_BUILD "sphinx-build-3" CACHE STRING "Name/Path of the sphinx-build executable to use.")
+ set(SPHINX_FLAGS "" CACHE STRING "Flags to pass to sphinx-build")
+ 
+ find_program(BIN_SPHINX "${SPHINX_BUILD}")
