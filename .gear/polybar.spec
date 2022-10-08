@@ -75,5 +75,5 @@ mv $PWD/i3ipcpp $PWD/lib
 %_mandir/man5/%{name}*
 
 %changelog
-* Wed May 04 2022 Pavel Vasilev <django@altlinux.org> 3.6.3-alt1
+* Sat Sep 08 2022 Pavel Vasilev <django@altlinux.org> 3.6.3-alt1
 - Initial build
