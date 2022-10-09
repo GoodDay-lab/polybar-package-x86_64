@@ -1,0 +1,6 @@
+tar: @version@:.
+tar: xpp:. name=@name@-xpp
+tar: i3ipcpp:. name=@name@-i3ipcpp
+spec: .gear/polybar.spec
+copy?: .gear/*.patch
+copy?: .gear/*.db
